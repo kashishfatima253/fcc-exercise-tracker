@@ -4,8 +4,7 @@ const app = express()
 const cors = require('cors')
 require('dotenv').config()
 const mongoose = require('mongoose')
-// const mongoUri = process.env['MONGO_URI']
-const mongoUri = "mongodb://kashishfatima253:7celUUDGu1aFIGT4@ac-nuvmn5q-shard-00-00.rug4hov.mongodb.net:27017,ac-nuvmn5q-shard-00-01.rug4hov.mongodb.net:27017,ac-nuvmn5q-shard-00-02.rug4hov.mongodb.net:27017/?ssl=true&replicaSet=atlas-13kleu-shard-0&authSource=admin&retryWrites=true&w=majority"
+const mongoUri = process.env.MONGO_URI
 mongoose.connect(mongoUri,{
   useNewUrlParser: true, 
   useUnifiedTopology: true 
